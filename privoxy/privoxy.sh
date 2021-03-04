@@ -3,7 +3,7 @@
 dir_storage="/opt/etc/privoxy" #如果没有opt目录可修改为/tmp/privoxy
 [ ! -d "$dir_storage" ] && mkdir $dir_storage
 
-file_url="https://raw.githubusercontent.com/Twinzo1/padavan/master/privoxy"
+file_url="https://raw.githubusercontent.com/jaskon139/padavan/master/master/privoxy"
 
 config="$dir_storage/config"
 default.action="$dir_storage/default.action"
@@ -52,7 +52,7 @@ func_create_config()
 	cp -af /usr/share/privoxy/privoxy $dir_storage
 	chmod 755 $privoxy
 	chmod 644 $dir_storage/*
-	sed -i "s/^listen-address.*/listen-address  ${ip_address}:8118/" $config
+	sed -i "s/^listen-address.*/listen-address  ${ip_address}:8918/" $config
 #	/sbin/mtd_storage.sh save
 }
 
