@@ -3,7 +3,7 @@
 dir_storage="/opt/etc/privoxy" #如果没有opt目录可修改为/tmp/privoxy
 [ ! -d "$dir_storage" ] && mkdir $dir_storage
 
-file_url="https://raw.githubusercontent.com/jaskon139/padavan/master/master/privoxy"
+file_url="https://raw.githubusercontent.com/jaskon139/padavan/master/privoxy"
 
 config="$dir_storage/config"
 default.action="$dir_storage/default.action"
