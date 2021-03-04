@@ -79,6 +79,12 @@ start)
 stop)
 	func_stop
 	;;
+init)
+	init_file
+	;;
+create)
+	func_create_config
+	;;
 *)
 	echo "Usage: $0 {start|stop}"
 	exit 1
